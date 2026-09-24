@@ -32,7 +32,7 @@ button, input { font: inherit; }
 	width: 100%;
 	margin-top: auto;
 	padding: 18px 24px 22px;
-	color: var(--muted);
+	color: var(--muted-dark);
 	background: #17212b;
 	border-top: 3px solid #111923;
 	text-align: center;
@@ -40,15 +40,57 @@ button, input { font: inherit; }
 	letter-spacing: .04em;
 
   a {
-    color: var(--muted);
+    color: var(--muted-dark);
     text-decoration: none;
   }
 }
 
 .footer-publisher {
-  color: var(--muted-dark);
+  color: var(--muted);
+
+  a {
+    color: var(--muted);
+    text-decoration: none;
+  }
 }
 
 .footer p {
 	margin: 0;
+}
+
+.top-bar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px clamp(20px, 5vw, 64px);
+  background: #293746;
+  border-bottom: 3px solid #17212b;
+}
+
+.top-bar-brand {
+  color: var(--ink);
+  font-family: 'Fredoka', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.settings-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 9px;
+  border: 1px solid var(--line);
+  border-radius: 100%;
+  color: var(--ink);
+  background: var(--line);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.settings-button:hover {
+  background: var(--paper);
+  border-color: var(--coral);
+  color: var(--coral);
 }

@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from 'react'
 
-import Footer from './elements/Footer'
-import Header from './elements/Header'
+import Footer from './Footer'
+import Header from './Header'
 
-import CircularProgress from './components/CircularProgress'
+import CircularProgress from '../components/CircularProgress'
 
 function App() {
   const [time, setTime] = useState(25 * 60)
