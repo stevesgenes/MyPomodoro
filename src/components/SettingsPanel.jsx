@@ -45,6 +45,7 @@ const SettingsPanel = ({ settings, soundOptions, onChange, onClose }) => (
             <small>Pomodoros</small>
           </span>
         </label>
+        <p className="settings-help">The long break replaces the selected break when this repetition count is reached.</p>
          <div className="settings-divider" />
         <p className="settings-label settings-sound-heading">Sound on completion</p>
         <div className="settings-sound-grid">
@@ -62,7 +63,6 @@ const SettingsPanel = ({ settings, soundOptions, onChange, onClose }) => (
             </label>
           ))}
         </div>
-        <p className="settings-help">The long break replaces the selected break when this repetition count is reached.</p>
       </div>
     </section>
   </div>

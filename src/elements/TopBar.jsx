@@ -9,7 +9,7 @@ function TopBar({ onOpenSettings, onOpenTheme }) {
         <nav className="top-bar" aria-label="Main navigation">
 
             <div style={{ display: "flex", flexDirection: "column", gap: "3px" }}> 
-                <a className="top-bar-brand" href="/" style={{ lineHeight: 1 }}>MyPomodoro</a> 
+                <a className="top-bar-brand" href="./" style={{ lineHeight: 1 }}>MyPomodoro</a> 
                 <p style={{ color: "var(--muted)", margin: 0, fontSize: "0.85rem" }}>{version}</p> 
             </div>
 

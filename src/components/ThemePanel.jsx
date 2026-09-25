@@ -16,6 +16,7 @@ const ThemePanel = ({ themes, selectedTheme, dynamicTheme, onThemeChange, onDyna
       </label>
       <p className="settings-help">Match the theme accent to the active session color.</p>
 
+        <div className="settings-divider" />
       <p className="settings-label theme-list-label">Static themes</p>
       <div className="theme-list">
         {Object.entries(themes).map(([key, theme]) => (
