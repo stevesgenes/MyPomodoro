@@ -1,9 +1,9 @@
 import TopBar from "./TopBar";
 
-function Header() {
+function Header({ onOpenSettings, onOpenTheme }) {
     return(
         <>
-            <TopBar />
+            <TopBar onOpenSettings={onOpenSettings} onOpenTheme={onOpenTheme} />
         </>
     )
 }

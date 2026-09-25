@@ -1,7 +1,7 @@
 {
   "name": "mypomodoro",
   "private": true,
-  "version": "0.0.1-alpha",
+  "version": "0.4.12-rc",
   "type": "module",
   "scripts": {
     "dev": "vite",

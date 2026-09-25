@@ -1,8 +1,8 @@
-import { Settings } from "lucide-react";
+import { Palette, Settings } from "lucide-react";
 import project_details from "../../package.json";
 import Button from "../components/Button";
 
-function TopBar() {
+function TopBar({ onOpenSettings, onOpenTheme }) {
     const version = `v${project_details.version}`;
 
     return (
@@ -17,13 +17,24 @@ function TopBar() {
                 <Button
                     text={null}
                     textColor = '#fff'
+                    backgroundColor = 'var(--theme-line)'
+                    padding = "10px 10px"
+                    borderRadius = "100%"
+                    ariaLabel="Open theme selector"
+                    onClick={onOpenTheme}
+                    icon={<Palette size={28} />}
+                />
+                <Button
+                    text={null}
+                    textColor = '#fff'
 
-                    backgroundColor = 'var(--muted-dark)'
+                    backgroundColor = 'var(--theme-line)'
 
                     padding = "10px 10px"
                     borderRadius = "100%"
 
                     ariaLabel="Open settings"
+                    onClick={onOpenSettings}
 
                     icon={
                         <Settings

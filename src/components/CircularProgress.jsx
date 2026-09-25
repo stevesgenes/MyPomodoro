@@ -1,13 +1,13 @@
 import React from 'react';
 
 const CircularProgress = ({ text = null, size = 150, progress = 0, strokeWidth = 10, circleColor = '#e6e6e6', progressColor = '#3b82f6', textColor = '#333' }) => {
-  const validatedProgress = Math.min(Math.max(progress, 0), 100);
+  const validatedProgress = Math.min(Math.max(progress, 0), 100)
 
-  const center = size / 2;
-  const radius = center - strokeWidth;
-  const circumference = 2 * Math.PI * radius;
+  const center = size / 2
+  const radius = center - strokeWidth
+  const circumference = 2 * Math.PI * radius
 
-  const strokeDashoffset = circumference - (validatedProgress / 100) * circumference;
+  const strokeDashoffset = circumference - (validatedProgress / 100) * circumference
 
   return (
     <div style={{ position: 'relative', width: size, height: size }}>
