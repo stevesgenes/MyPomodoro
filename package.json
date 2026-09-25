@@ -1,7 +1,8 @@
 {
   "name": "mypomodoro",
-  "private": true,
   "version": "0.4.12-rc",
+  "homepage": "https://github.io",
+  "private": false,
   "type": "module",
   "scripts": {
     "dev": "vite",
